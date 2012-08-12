@@ -1,0 +1,6 @@
+git add <file> track the file
+git status -uno
+git pull <file> pull the latest changes from repository
+git reset <file> untrack the  file
+git push <file> push the changes to repository
+git branch (it should show the current repository)
