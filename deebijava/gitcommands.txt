@@ -1,0 +1,15 @@
+git commands : 
+
+git status - to check the local repositary status
+
+git add  - To track the file
+
+git reset - to untrack the specified files 
+
+git branch - to list local repositories
+
+git push -  to upload the changes in the repository
+
+git pull - to pull the files to  ur local
+
+git commit - to commit the changes
