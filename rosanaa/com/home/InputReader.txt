@@ -1,0 +1,25 @@
+package com.home;
+import java.io.IOException;
+
+public class InputReader {
+
+
+	public static  int readInt() {
+	{
+		int a=0;
+		byte[] bArray = new byte[100];
+		
+		try {
+			
+			System.in.read (bArray);
+			String s = new String (bArray);
+			//System.out.println("before limit"+s.trim()+"After limit");
+			int a = Integer.parseInt(s.trim());
+			prime(n);
+		}
+		catch (IOException e) {
+			e.printStackTrace ();
+		}
+		return a;
+	}
+	
