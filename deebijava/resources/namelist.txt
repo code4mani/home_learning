@@ -1,0 +1,3 @@
+26,Anna,male
+67,Hazaare,male
+36,Queen,female
