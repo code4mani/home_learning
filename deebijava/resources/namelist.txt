@@ -1,0 +1,7 @@
+26,Anna,male
+67,Hazaare,male
+44,aaa,male
+67,fsdf,trans
+23,tydg,asfaz
+45,ggg,female
+36,Queen,female
