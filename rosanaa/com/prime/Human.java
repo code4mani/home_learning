@@ -2,7 +2,9 @@ package com.prime;
 
 import java.io.*;
 
-public class Human {
+import java.util.Comparator;
+
+public class Human implements Comparable<Human> {
 	public enum Gender{
 		MALE,
 		FEMALE,
@@ -27,6 +29,11 @@ public class Human {
 	public Gender getGender(){
 		return gender;
 	}
+	
+	public int compareTo(Human other) {
+		return this.getAge() - other.getAge();
+	}
+	
 	
 }
 		

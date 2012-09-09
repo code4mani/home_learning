@@ -2,10 +2,7 @@ package com.home;
 import java.io.IOException;
 
 public class InputReader {
-
-
 	public static  int readInt() {
-	
 		int a=0;
 		byte[] bArray = new byte[100];
 		
@@ -23,9 +20,7 @@ public class InputReader {
 		return a;
 	}
 	
-
 		public static String readString() {
-	
 		String a = "";
 		byte[] bArray = new byte[100];
 		
@@ -41,6 +36,25 @@ public class InputReader {
 		}
 		return a.trim();
 	}
+	//Reading double
+	public static double readDouble() {
 	
+		double a = 0;
+		byte[] bArray = new byte[100];
+		
+		try {
+			
+			System.in.read (bArray);
+			String s = new String (bArray);
+			a = Double.parseDouble(s.trim());
+			
+		
+			}
+		catch (IOException e) {
+			e.printStackTrace ();
+		}
+		return a;
 	}
+	
+}
 	
