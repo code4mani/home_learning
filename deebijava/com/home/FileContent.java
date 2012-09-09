@@ -33,5 +33,31 @@ public class FileContent {
 		}
 		return list;
 	}
+	
+	//int
+	public List<Integer> readIntList() {
+		List<Integer> list = new ArrayList<Integer>();
+		
+		FileReader file = null;
+		BufferedReader bur = null;
+			
+		try {			
+			file = new FileReader(name);
+			bur = new BufferedReader(file);
+			String str = bur.readLine();
+			while(str != null) {
+				list.add(Integer.parseInt(str));
+				str = bur.readLine();
+			}
+			file.close();
+			bur.close();
+		
+		}
+		catch(IOException e) {
+			e.printStackTrace ();
+		}
+		return list;
+	}
+
 }
  
