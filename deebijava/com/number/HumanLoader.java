@@ -27,13 +27,19 @@ public class HumanLoader{
 			}
 		}
 		//Sorting
-		// Collections.sort(hum, new HumanComparator() );
-		Collections.sort(hum, new Comparator<Human> () {
+		
+		Algorithms.bubbleSort(hum, new Comparator<Human> () {
 			public int compare(Human h1, Human h2) {
 				return h1.getName().compareToIgnoreCase(h2.getName());
 			}
 		});
-
+		// Collections.sort(hum, new HumanComparator() );
+		/**Collections.sort(hum, new Comparator<Human> () {
+			public int compare(Human h1, Human h2) {
+				return h1.getName().compareToIgnoreCase(h2.getName());
+			}
+		});
+*/
 		System.out.println("Sorted humen name:");
 		for(Human st : hum) {			
 			System.out.println(st.getName());

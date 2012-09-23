@@ -6,19 +6,22 @@ import java.util.ArrayList;
 import java.util.Collections;
 import com.home.InputReader;
 import com.home.FileContent;
-
+import com.number.Algorithms;
 
 public class LinearSearch{
 	public static void main(String[] args) {
-		List<Integer> nmbrs = load("resources/numlist.txt");
+		List<String> nmbrs = load("resources/stringlist.txt");
 		System.out.println("The numbers in the list are: " +nmbrs);
+		/*
 		for(Integer s : nmbrs) {
 			System.out.println( s );
-		}
+		}*/
 		
 		System.out.println("Enter the number to search: ");
-		int n = InputReader.readInt();
+		String n = InputReader.readString();
+		Algorithms.linearSearch(nmbrs,n);
 		
+		/*
 		for (Integer i : nmbrs) {
 			
 			if (i == n) {
@@ -26,14 +29,14 @@ public class LinearSearch{
 				break;
 			}
 			
-		}
+		}*/
 		
 		//load
 	}
-	public static List<Integer> load(String fileName) { 
+	public static List<String> load(String fileName) { 
 		
 		FileContent filen = new FileContent(fileName);
-		return filen.readIntList();
+		return filen.readIt();
 		
 	}
 }
